@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groq + ChromaDB RAG Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">✦</div>
+            <div>
+                <h1>RAG Assistant</h1>
+                <p>Groq + ChromaDB</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            API Online
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="hero">
+            <span class="badge">AI DOCUMENT ASSISTANT</span>
+            <h2>Ask questions about your documents.</h2>
+            <p>
+                Powered by Retrieval-Augmented Generation,
+                ChromaDB and Groq.
+            </p>
+        </section>
+
+        <section class="chat-card">
+
+            <div class="chat-header">
+                <div>
+                    <h3>Ask RAG Assistant</h3>
+                    <span>Get answers from your indexed knowledge base</span>
+                </div>
+
+                <button id="clearBtn" class="clear-btn">
+                    Clear
+                </button>
+            </div>
+
+            <div id="chatBox" class="chat-box">
+
+                <div class="message bot">
+                    <div class="avatar">AI</div>
+
+                    <div class="bubble">
+                        <p>
+                            Hello! 👋 Ask me anything about your
+                            indexed documents.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="input-area">
+
+                <textarea
+                    id="question"
+                    placeholder="Ask a question about your documents..."
+                    rows="3"
+                ></textarea>
+
+                <div class="input-footer">
+                    <span id="charCount">0 characters</span>
+
+                    <button id="sendBtn" class="send-btn">
+                        <span>Ask AI</span>
+                        <span class="arrow">➜</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="features">
+
+            <div class="feature">
+                <div class="feature-icon">🔎</div>
+                <div>
+                    <h4>Semantic Search</h4>
+                    <p>Find relevant document content.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🧠</div>
+                <div>
+                    <h4>RAG Powered</h4>
+                    <p>Answers grounded in your data.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div>
+                    <h4>Groq Speed</h4>
+                    <p>Fast AI-powered responses.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Groq + ChromaDB RAG Assistant • Built with FastAPI</p>
+    </footer>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
